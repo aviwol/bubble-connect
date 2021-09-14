@@ -1,0 +1,11 @@
+{
+    "OKTA_KEY": "",
+    "OKTA_SECRET": "",
+    "OKTA_NONCE": "",
+    "TWILIO_SID": "",
+    "TWILIO_TOKEN":"",
+    "OKTA_ORG_URL": "",
+    "APP_URL": "",
+    "WHATSAPP_NUMBER": "",    
+    "FLASK_SECRET": ""
+}
