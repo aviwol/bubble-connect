@@ -10,6 +10,8 @@ from twilio.rest import Client
 from settings import Settings
 from okta_helpers import OktaHelper
 
+app = Flask(__name__)
+
 @app.route("/authorization-code/callback")
 def callback():
     headers = {'Content-Type': 'application/x-www-form-urlencoded'}
@@ -113,9 +115,10 @@ def bot():
 
 
 if __name__ == "__main__":
-    # Flask settings
-    app = Flask(__name__)
-    settings = Settings()
+
+    settings = Settings().settings
+
+    # Flask settings update
     app.secret_key = settings["FLASK_SECRET"]
 
     # Twilio settings
